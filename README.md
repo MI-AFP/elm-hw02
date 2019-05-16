@@ -94,3 +94,8 @@ You have an application boilerplate prepared in `src/Main.elm`. There are some v
   - should be cleared after it is submitted
   - make sure to handle error response from the server
   - make sure the form cannot be submitted multiple times (e.g., by disabling the submit button while it is loading)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
