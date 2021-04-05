@@ -11,74 +11,85 @@ module Styles exposing
     , textarea
     )
 
-import Html.Attributes exposing (style)
+import Html exposing (Attribute)
+import Html.Attributes as Attributes
 
 
+content : List (Attribute msg)
 content =
-    [ style "display" "flex" ]
+    [ Attributes.style "display" "flex" ]
 
 
+bookList : List (Attribute msg)
 bookList =
-    [ style "flex-basis" "15%"
-    , style "margin" "1rem"
-    , style "padding-right" "1rem"
-    , style "border-right" "1px solid #000"
+    [ Attributes.style "flex-basis" "15%"
+    , Attributes.style "margin" "1rem"
+    , Attributes.style "padding-right" "1rem"
+    , Attributes.style "border-right" "1px solid #000"
     ]
 
 
+bookListItem : List (Attribute msg)
 bookListItem =
-    [ style "padding" ".25rem 0" ]
+    [ Attributes.style "padding" ".25rem 0" ]
 
 
+bookListItemLink : List (Attribute msg)
 bookListItemLink =
-    [ style "color" "blue"
-    , style "text-decoration" "underline"
-    , style "cursor" "pointer"
+    [ Attributes.style "color" "blue"
+    , Attributes.style "text-decoration" "underline"
+    , Attributes.style "cursor" "pointer"
     ]
 
 
+bookDetail : List (Attribute msg)
 bookDetail =
-    [ style "flex-basis" "65%"
-    , style "position" "relative"
+    [ Attributes.style "flex-basis" "65%"
+    , Attributes.style "position" "relative"
     ]
 
 
+bookDetailDelete : List (Attribute msg)
 bookDetailDelete =
-    [ style "position" "absolute"
-    , style "top" ".5rem"
-    , style "right" ".5rem"
-    , style "padding" ".5rem"
-    , style "color" "red"
-    , style "cursor" "pointer"
+    [ Attributes.style "position" "absolute"
+    , Attributes.style "top" ".5rem"
+    , Attributes.style "right" ".5rem"
+    , Attributes.style "padding" ".5rem"
+    , Attributes.style "color" "red"
+    , Attributes.style "cursor" "pointer"
     ]
 
 
+addBook : List (Attribute msg)
 addBook =
-    [ style "flex-basis" "20%"
-    , style "margin" "1rem"
-    , style "padding-left" "1rem"
-    , style "border-left" "1px solid #000"
+    [ Attributes.style "flex-basis" "20%"
+    , Attributes.style "margin" "1rem"
+    , Attributes.style "padding-left" "1rem"
+    , Attributes.style "border-left" "1px solid #000"
     ]
 
 
+label : List (Attribute msg)
 label =
-    [ style "display" "block"
-    , style "font-weight" "bold"
-    , style "margin-bottom" ".5rem"
+    [ Attributes.style "display" "block"
+    , Attributes.style "font-weight" "bold"
+    , Attributes.style "margin-bottom" ".5rem"
     ]
 
 
+input : List (Attribute msg)
 input =
-    [ style "width" "100%"
-    , style "padding" "0.25rem"
-    , style "margin-bottom" "1rem"
+    [ Attributes.style "width" "100%"
+    , Attributes.style "padding" "0.25rem"
+    , Attributes.style "margin-bottom" "1rem"
     ]
 
 
+textarea : List (Attribute msg)
 textarea =
-    [ style "width" "100%"
-    , style "padding" "0.25rem"
-    , style "margin-bottom" "1rem"
-    , style "resize" "vertical"
-    , style "min-height" "5rem"
+    [ Attributes.style "width" "100%"
+    , Attributes.style "padding" "0.25rem"
+    , Attributes.style "margin-bottom" "1rem"
+    , Attributes.style "resize" "vertical"
+    , Attributes.style "min-height" "5rem"
     ]
