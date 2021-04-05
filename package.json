@@ -4,13 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/main.js"
+    "dev": "elm reactor",
+    "format": "run-s format:elm format:prettier",
+    "format:elm": "elm-format --yes ./src/",
+    "format:prettier": "prettier --write \"{server,src}/**/*.js\" README.md",
+    "server": "nodemon server/main.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "express": "^4.16.4",
     "nodemon": "^1.19.0"
+  },
+  "devDependencies": {
+    "elm": "^0.19.1-5",
+    "elm-format": "^0.8.5",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1"
   }
 }
